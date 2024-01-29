@@ -1,6 +1,6 @@
 // Style
 import { Link } from "react-scroll";
-
+import styled from "styled-components";
 // Icons
 
 const Nav = () => {

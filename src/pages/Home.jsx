@@ -1,5 +1,8 @@
 // Components
 
+// Style
+import styled from "styled-components";
+
 const Home = () => {
   return (
     <main>

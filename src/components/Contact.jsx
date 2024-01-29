@@ -1,3 +1,6 @@
+// Style
+import styled from "styled-components";
+
 const Contact = () => {
   return (
     <section id="contact">

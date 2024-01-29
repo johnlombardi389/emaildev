@@ -1,9 +1,18 @@
-function App() {
-  const [count, setCount] = useState(0);
+// Components
+import Nav from "./components/nav";
+import Footer from "./components/footer";
+// Pages
+import Home from "./pages/home";
+// Style
+import GlobalStyles from "./style/GlobalStyles";
 
+function App() {
   return (
     <>
-      <div>Hello World</div>
+      <GlobalStyles />
+      <Nav />
+      <Home />
+      <Footer />
     </>
   );
 }
