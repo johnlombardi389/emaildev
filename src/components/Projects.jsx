@@ -1,9 +1,11 @@
 // Style
 import styled from "styled-components";
+// Images
+import Rectangles from "../assets/rectangles.svg";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section>
       <div>Hello Projects</div>
     </section>
   );

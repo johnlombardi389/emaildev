@@ -12,6 +12,14 @@ const Nav = () => {
         <li>
           <img src={Logo} alt="John's JL Logo" />
         </li>
+        {/* <li>Projects</li>
+        <li>About</li>
+        <li>Contact</li> */}
+      </StyledList>
+      <StyledList>
+        {/* <li>
+          <img src={Logo} alt="John's JL Logo" />
+        </li> */}
         <li>Projects</li>
         <li>About</li>
         <li>Contact</li>
@@ -24,14 +32,14 @@ export default Nav;
 
 const StyledNav = styled.nav`
   min-height: 5vh;
-  /* margin: auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 5rem; */
   position: sticky;
   top: 0;
   z-index: 10;
+  max-width: 1900px;
+  margin: 0 auto;
 `;
 
 const StyledList = styled.ul`
@@ -39,7 +47,7 @@ const StyledList = styled.ul`
   align-items: center;
   list-style: none;
   li {
-    /* padding-left: 3rem; */
+    padding: 0.5rem 2rem;
     position: relative;
     font-size: 1.1rem;
     img {

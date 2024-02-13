@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  {/* Left Rectangle */}
+  <rect x="-50" y="0" width="100" height="100%" fill="#3498db" transform="rotate(-45, 0, 50)" />
+
+  {/* Space in Between */}
+  <rect x="50" y="0" width="20" height="100%" fill="transparent" />
+
+  {/* Right Rectangle */}
+  <rect x="70" y="0" width="150" height="100%" fill="#e74c3c" transform="rotate(-45, 140, 50)" />
+</svg>
