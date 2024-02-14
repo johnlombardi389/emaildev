@@ -30,6 +30,7 @@ const StyledProjects = styled.section`
 
 const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem;
+  padding: 0 1rem;
 `;
