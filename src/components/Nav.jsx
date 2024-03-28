@@ -40,6 +40,7 @@ const StyledNav = styled.nav`
   z-index: 10;
   max-width: 1900px;
   margin: 0 auto;
+  background-color: #292929;
 `;
 
 const StyledList = styled.ul`
@@ -50,6 +51,7 @@ const StyledList = styled.ul`
     padding: 0.5rem 2rem;
     position: relative;
     font-size: 1.1rem;
+    color: #fdfdfd;
     img {
       width: 1.75rem;
       height: 1.75rem;

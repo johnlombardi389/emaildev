@@ -25,13 +25,13 @@ export default Projects;
 
 const StyledProjects = styled.section`
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
 `;
 
 const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   padding: 0rem;
 
   @media (max-width: 900px) {

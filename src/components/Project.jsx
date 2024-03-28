@@ -32,7 +32,6 @@ export default Project;
 const StyledProject = styled.div`
   display: flex;
   align-items: stretch;
-  margin: 1rem;
 
   .project-img {
     flex: 1;
