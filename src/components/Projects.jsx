@@ -24,13 +24,17 @@ const Projects = () => {
 export default Projects;
 
 const StyledProjects = styled.section`
-  max-width: 1900px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
 const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 0rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 `;

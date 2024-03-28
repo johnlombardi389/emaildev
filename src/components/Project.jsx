@@ -31,38 +31,39 @@ export default Project;
 
 const StyledProject = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin: 1rem;
 
   .project-img {
-    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: stretch;
     height: auto;
     z-index: 2;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); */
 
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 
   .project-desc {
-    width: 30rem;
-    height: 15rem;
-    background-color: #f9c04d;
-    margin-top: -4rem;
-    margin-left: 0rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: stretch;
+    background-color: #f9c04d;
     padding: 1rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
 
     p {
       padding: 0.5rem 0;
       font-size: 1.2rem;
       line-height: 1.5rem;
+      padding-bottom: 1rem;
     }
 
     button {
@@ -77,6 +78,11 @@ const StyledProject = styled.div`
       cursor: pointer;
     }
   }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const StyledTools = styled.ul`
@@ -85,6 +91,7 @@ const StyledTools = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding-bottom: 2rem;
 
   li {
     margin-right: 0.5rem;
