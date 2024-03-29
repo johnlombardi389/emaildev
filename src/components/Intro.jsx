@@ -1,9 +1,9 @@
 const Intro = () => {
   return (
     <div>
-      <h1>Your Name</h1>
-      <p>What you do</p>
-      <p>Brief statement in one sentence</p>
+      <h1>John Lombardi</h1>
+      <p>Email Developer</p>
+      <p>I make cool emails for you.</p>
     </div>
   );
 };

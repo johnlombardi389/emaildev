@@ -78,10 +78,10 @@ const StyledProject = styled.div`
     }
   }
 
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 `;
 
 const StyledTools = styled.ul`

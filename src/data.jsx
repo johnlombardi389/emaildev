@@ -4,6 +4,7 @@ import ProjectOne from "./assets/project1.jpeg";
 const projectData = () => [
   {
     id: 1,
+    tag: "Newsletter",
     title: "Cooking Recipes Email",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",
@@ -14,6 +15,7 @@ const projectData = () => [
   },
   {
     id: 2,
+    tag: "Promotional",
     title: "Project 2",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",
@@ -23,6 +25,7 @@ const projectData = () => [
   },
   {
     id: 3,
+    tag: "Transactional",
     title: "Project 3",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",
@@ -32,6 +35,7 @@ const projectData = () => [
   },
   {
     id: 4,
+    tag: "Newsletter",
     title: "Project 4",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",

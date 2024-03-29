@@ -50,11 +50,11 @@ const StyledList = styled.ul`
   li {
     padding: 0.5rem 2rem;
     position: relative;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #fdfdfd;
     img {
-      width: 1.75rem;
-      height: 1.75rem;
+      width: 2rem;
+      height: 2rem;
     }
   }
 `;

@@ -1,19 +1,47 @@
-// Style
+import React, { useState } from "react";
 import styled from "styled-components";
-// Project Data
-import projectData from "../data";
-// Components
 import Project from "./Project";
-// Images
-import Rectangles from "../assets/rectangles.svg";
+import projectData from "../data";
 
 const Projects = () => {
+  const [filter, setFilter] = useState("All");
   const data = projectData();
+
+  const filteredProjects =
+    filter === "All" ? data : data.filter((project) => project.tag === filter);
 
   return (
     <StyledProjects>
+      <h2>Portfolio</h2>
+      <FilterOptions>
+        <button
+          onClick={() => setFilter("All")}
+          className={filter === "All" ? "active" : ""}
+        >
+          All
+        </button>
+        <button
+          onClick={() => setFilter("Transactional")}
+          className={filter === "Transactional" ? "active" : ""}
+        >
+          Transactional
+        </button>
+        <button
+          onClick={() => setFilter("Promotional")}
+          className={filter === "Promotional" ? "active" : ""}
+        >
+          Promotional
+        </button>
+        <button
+          onClick={() => setFilter("Newsletter")}
+          className={filter === "Newsletter" ? "active" : ""}
+        >
+          Newsletter
+        </button>
+      </FilterOptions>
+
       <ProjectsGrid>
-        {data.map((project) => (
+        {filteredProjects.map((project) => (
           <Project key={project.id} {...project} />
         ))}
       </ProjectsGrid>
@@ -28,6 +56,35 @@ const StyledProjects = styled.section`
   margin: 2rem auto;
 `;
 
+const FilterOptions = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #555;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      font-weight: bold;
+      color: #ff6600;
+    }
+  }
+`;
+
 const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -35,6 +92,7 @@ const ProjectsGrid = styled.div`
   padding: 0rem;
 
   @media (max-width: 900px) {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    margin: 0 2rem;
   }
 `;
