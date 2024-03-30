@@ -11,13 +11,12 @@ const Project = ({ title, tools, description, image }) => {
       </div>
       <div className="project-desc">
         <p>{title}</p>
-        {/* <p>{description}</p> */}
-
         <StyledTools>
           {tools.map((tool, index) => (
             <li key={index} dangerouslySetInnerHTML={{ __html: tool }} />
           ))}
         </StyledTools>
+        <p>{description}</p>
         <div className="buttons">
           <button>View Email</button>
           <button>See Code</button>

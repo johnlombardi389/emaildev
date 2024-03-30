@@ -53,13 +53,19 @@ export default Projects;
 
 const StyledProjects = styled.section`
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 2rem auto 5rem auto;
+
+  h2 {
+    text-align: center;
+  }
 `;
 
 const FilterOptions = styled.div`
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+  max-width: 400px;
 
   button {
     background-color: transparent;
@@ -79,7 +85,6 @@ const FilterOptions = styled.div`
     }
 
     &.active {
-      font-weight: bold;
       color: #ff6600;
     }
   }

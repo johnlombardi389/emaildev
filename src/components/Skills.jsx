@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-// Icons
 import {
   SiJavascript,
   SiCss3,
@@ -39,99 +38,50 @@ const jiggleAnimation = keyframes`
 const Skills = () => {
   return (
     <StyledSkills id="skills">
-      <div>Hello Skills</div>
-      <ul>
-        <li>
-          <SiJavascript
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          JavaScript
-        </li>
-
-        <li>
-          <SiCss3 style={{ verticalAlign: "middle", marginRight: "0.5rem" }} />{" "}
-          CSS
-        </li>
-
-        <li>
-          <SiHtml5 style={{ verticalAlign: "middle", marginRight: "0.5rem" }} />{" "}
-          HTML
-        </li>
-
-        <li>
-          <SiReact style={{ verticalAlign: "middle", marginRight: "0.5rem" }} />{" "}
-          React
-        </li>
-
-        <li>
-          <SiPython
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          Python
-        </li>
-
-        <li>
-          <SiTailwindcss
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          Tailwind CSS
-        </li>
-
-        <li>
-          <SiSass style={{ verticalAlign: "middle", marginRight: "0.5rem" }} />{" "}
-          Sass
-        </li>
-
-        <li>
-          <SiAdobephotoshop
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          Photoshop
-        </li>
-
-        <li>
-          <SiAdobeillustrator
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          Illustrator
-        </li>
-
-        <li>
-          <SiAdobeindesign
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          InDesign
-        </li>
-
-        <li>
-          <SiFigma style={{ verticalAlign: "middle", marginRight: "0.5rem" }} />{" "}
-          Figma
-        </li>
-
-        <li>
-          <SiBootstrap
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          Bootstrap
-        </li>
-
-        <li>
-          <SiGit style={{ verticalAlign: "middle", marginRight: "0.5rem" }} />{" "}
-          Git
-        </li>
-
-        <li>
-          <SiDjango
-            style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
-          />{" "}
-          Django
-        </li>
-
-        <li>
-          <img src={Mjml} alt="Mjml Logo" />
-          MJML
-        </li>
-      </ul>
+      <SkillsList>
+        <SkillItem>
+          <SiHtml5 /> HTML
+        </SkillItem>
+        <SkillItem>
+          <SiCss3 /> CSS
+        </SkillItem>
+        <SkillItem>
+          <SiJavascript /> JavaScript
+        </SkillItem>
+        <SkillItem>
+          <SiReact /> React
+        </SkillItem>
+        <SkillItem>
+          <img src={Mjml} alt="MJML Logo" /> MJML
+        </SkillItem>
+        <SkillItem>
+          <SiTailwindcss /> Tailwind CSS
+        </SkillItem>
+        <SkillItem>
+          <SiSass /> Sass
+        </SkillItem>
+        <SkillItem>
+          <SiBootstrap /> Bootstrap
+        </SkillItem>
+        <SkillItem>
+          <SiPython /> Python
+        </SkillItem>
+        <SkillItem>
+          <SiAdobephotoshop /> Photoshop
+        </SkillItem>
+        <SkillItem>
+          <SiAdobeillustrator /> Illustrator
+        </SkillItem>
+        <SkillItem>
+          <SiAdobeindesign /> InDesign
+        </SkillItem>
+        <SkillItem>
+          <SiFigma /> Figma
+        </SkillItem>
+        <SkillItem>
+          <SiGit /> Git
+        </SkillItem>
+      </SkillsList>
     </StyledSkills>
   );
 };
@@ -139,43 +89,38 @@ const Skills = () => {
 export default Skills;
 
 const StyledSkills = styled.section`
+  /* max-width: 1200px;
+  margin: 2rem auto; */
+  background-color: red;
+  padding: 2rem 0;
+`;
+
+const SkillsList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 2rem auto;
+`;
 
-  ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    flex-wrap: wrap;
-    margin: 2rem;
+const SkillItem = styled.li`
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  background-color: #f0f0f0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
 
-    li {
-      padding: 0.5rem 1.25rem;
-      border-radius: 1.5rem;
-      background-color: #f0f0f0;
-      margin: 1rem 1rem;
-      position: relative;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      transition: transform 0.2s ease; /* Added transition for smooth effect */
+  svg,
+  img {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.5rem;
+  }
 
-      img {
-        width: 1.75rem;
-        height: 1.75rem;
-        margin-right: 0.5rem;
-        padding: 0;
-      }
-
-      svg {
-        width: 1.75rem;
-        height: 1.75rem;
-        margin: 0;
-      }
-
-      &:hover {
-        animation: ${jiggleAnimation} 0.5s ease infinite;
-      }
-    }
+  &:hover {
+    animation: ${jiggleAnimation} 0.5s ease infinite;
   }
 `;
