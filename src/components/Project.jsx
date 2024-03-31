@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Images
 import ProjectOne from "../assets/project1.jpeg";
 
-const Project = ({ title, tools, description, image }) => {
+const Project = ({ title, tools, description, image, demo, github }) => {
   return (
     <StyledProject>
       <div className="project-img">
@@ -18,8 +18,12 @@ const Project = ({ title, tools, description, image }) => {
         </StyledTools>
         <p>{description}</p>
         <div className="buttons">
-          <button>View Email</button>
-          <button>See Code</button>
+          <a href={demo} target="_blank" rel="noopener noreferrer">
+            <button>View Demo</button>
+          </a>
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <button>See GitHub</button>
+          </a>
         </div>
       </div>
     </StyledProject>
