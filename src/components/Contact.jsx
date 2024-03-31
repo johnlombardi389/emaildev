@@ -96,10 +96,9 @@ export default Contact;
 
 const StyledContact = styled.section`
   background-color: #f9f9f9;
-  padding: 2rem;
+  padding: 5rem 2rem;
   text-align: center;
-
-  h2 {
+  margin: h2 {
     margin-bottom: 2rem;
     color: #333;
   }

@@ -10,12 +10,20 @@ const About = () => {
         <AboutText>
           <h3>Hey, it's me! I'm John</h3>
           <p>
-            An HTML Email Developer with a comprehensive understanding of email
-            design. From translating design mockups into HTML email documents, I
-            create original and effective designs that take all project
-            deliverables into account. Personal development is very important to
-            me, and I'm constantly improving my skills and knowledge to get the
-            best results from every campaign.
+            An HTML Email Developer dedicated to crafting impactful digital
+            communication experiences. With a keen eye for detail and a deep
+            understanding of email design principles, I specialize in
+            transforming design concepts into polished HTML email campaigns.
+            Continuous growth is at the core of my professional journey. I am
+            committed to honing my skills and learning about the latest trends
+            and technologies in email development.
+          </p>
+          <p>
+            Having traversed a diverse career path that blends design and
+            coding, I bring a unique perspective to every project. Originally
+            trained in product design, I transitioned seamlessly into the world
+            of development. Allowing me to easily understand and translate
+            design mockups into HTML email documents.
           </p>
         </AboutText>
         <AboutImg>
@@ -30,7 +38,7 @@ export default About;
 
 const StyledAbout = styled.section`
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 5rem auto;
 `;
 
 const AboutContent = styled.div`
@@ -47,6 +55,7 @@ const AboutContent = styled.div`
 
 const AboutText = styled.div`
   flex: 1;
+  /* margin: 0 2rem; */
 
   h3 {
     font-size: 2rem;
@@ -58,6 +67,11 @@ const AboutText = styled.div`
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 1225px) {
+    margin: 0 2rem;
   }
 `;
 
@@ -71,7 +85,11 @@ const AboutImg = styled.div`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
+  @media (max-width: 1225px) {
+    margin: 0 2rem;
+  }
+
   @media (max-width: 768px) {
-    margin-top: 2rem;
+    margin: 2rem 2rem 0;
   }
 `;

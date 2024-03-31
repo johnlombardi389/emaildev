@@ -5,7 +5,7 @@ const projectData = () => [
   {
     id: 1,
     tag: "Newsletter",
-    title: "Cooking Recipes Email",
+    title: "NYT Cooking Newsletter",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",
     github: "https://github.com/johnlombardi389/recipe-ready",
@@ -26,7 +26,7 @@ const projectData = () => [
   {
     id: 3,
     tag: "Promotional",
-    title: "Project 3",
+    title: "Capcom Promotional Email",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",
     github: "https://github.com/johnlombardi389/recipe-ready",
@@ -36,7 +36,7 @@ const projectData = () => [
   {
     id: 4,
     tag: "Newsletter",
-    title: "Project 4",
+    title: "Uber Promotional Email",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/recipe-ready/",
     github: "https://github.com/johnlombardi389/recipe-ready",

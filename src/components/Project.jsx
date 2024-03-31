@@ -10,19 +10,19 @@ const Project = ({ title, tools, description, image, demo, github }) => {
         <img src={image} alt={`Project Image for ${title}`} />
       </div>
       <div className="project-desc">
-        <p>{title}</p>
-        <StyledTools>
+        <p className="project-title">{title}</p>
+        {/* <StyledTools>
           {tools.map((tool, index) => (
             <li key={index} dangerouslySetInnerHTML={{ __html: tool }} />
           ))}
-        </StyledTools>
-        <p>{description}</p>
+        </StyledTools> */}
+        <p className="project-summary">{description}</p>
         <div className="buttons">
           <a href={demo} target="_blank" rel="noopener noreferrer">
-            <button>View Demo</button>
+            <button className="demo-button">View Email</button>
           </a>
           <a href={github} target="_blank" rel="noopener noreferrer">
-            <button>See GitHub</button>
+            <button className="github-button">See Code</button>
           </a>
         </div>
       </div>
@@ -58,26 +58,51 @@ const StyledProject = styled.div`
     justify-content: center;
     align-items: stretch;
     background-color: #f9c04d;
-    padding: 1rem;
+    padding: 2rem;
     /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
 
-    p {
+    .project-title {
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .project-summary {
       padding: 0.5rem 0;
       font-size: 1.2rem;
       line-height: 1.5rem;
       padding-bottom: 1rem;
     }
 
-    button {
-      background-color: #bff94d;
-      color: #874df9;
-      font-weight: bold;
-      border: none;
-      padding: 1rem;
-      font-size: 0.9rem;
-      width: 100%;
-      margin-top: 1rem;
-      cursor: pointer;
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+
+      .demo-button {
+        background-color: #bff94d;
+        color: #874df9;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+
+      .github-button {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        text-decoration: underline;
+        color: #000;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
     }
   }
 
