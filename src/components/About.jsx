@@ -8,7 +8,7 @@ const About = () => {
     <StyledAbout id="about">
       <AboutContent>
         <AboutText>
-          <h3>Hey, it's me! I'm John</h3>
+          <h2>Hey, it's me! I'm John</h2>
           <p>
             An HTML Email Developer dedicated to crafting impactful digital
             communication experiences. With a keen eye for detail and a deep
@@ -38,7 +38,7 @@ export default About;
 
 const StyledAbout = styled.section`
   max-width: 1200px;
-  margin: 5rem auto;
+  margin: 10rem auto;
 `;
 
 const AboutContent = styled.div`
@@ -57,7 +57,7 @@ const AboutText = styled.div`
   flex: 1;
   /* margin: 0 2rem; */
 
-  h3 {
+  h2 {
     font-family: "Signika", sans-serif;
     font-size: 2rem;
     color: #4d2a00;

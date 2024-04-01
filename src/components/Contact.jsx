@@ -57,6 +57,7 @@ const Contact = () => {
   return (
     <StyledContact id="contact">
       <h2>Contact Me</h2>
+      <p>You can always reach me at: email</p>
       <FormWrapper onSubmit={handleSubmit}>
         <InputField
           type="text"
@@ -96,10 +97,11 @@ export default Contact;
 
 const StyledContact = styled.section`
   background-color: #f9f9f9;
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
   text-align: center;
   h2 {
     font-family: "Signika", sans-serif;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.075rem;
     margin-bottom: 2rem;

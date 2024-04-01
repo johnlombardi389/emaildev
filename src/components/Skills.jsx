@@ -38,6 +38,7 @@ const jiggleAnimation = keyframes`
 const Skills = () => {
   return (
     <StyledSkills id="skills">
+      <h2>Skills</h2>
       <SkillsList>
         <SkillItem>
           <SiHtml5 /> HTML
@@ -93,6 +94,15 @@ const StyledSkills = styled.section`
   margin: 2rem auto; */
   background-color: #fdc23e;
   padding: 2rem 0;
+  text-align: center;
+  h2 {
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
 `;
 
 const SkillsList = styled.ul`
