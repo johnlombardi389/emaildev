@@ -63,6 +63,7 @@ const StyledProject = styled.div`
 
     .project-title {
       padding: 0.5rem 0;
+      font-family: "Signika", sans-serif;
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 1.5rem;
@@ -71,6 +72,7 @@ const StyledProject = styled.div`
 
     .project-summary {
       padding: 0.5rem 0;
+      font-family: "Open Sans", sans-serif;
       font-size: 1.2rem;
       line-height: 1.5rem;
       padding-bottom: 1rem;
@@ -85,6 +87,7 @@ const StyledProject = styled.div`
       .demo-button {
         background-color: #274555;
         color: #ffffff;
+        font-family: "Signika", sans-serif;
         font-weight: bold;
         border: none;
         padding: 1rem 2rem;
@@ -102,6 +105,7 @@ const StyledProject = styled.div`
 
       .github-button {
         margin-top: 0.5rem;
+        font-family: "Open Sans", sans-serif;
         font-size: 0.9rem;
         text-decoration: underline;
         color: #000;

@@ -98,7 +98,8 @@ const StyledContact = styled.section`
   background-color: #f9f9f9;
   padding: 5rem 2rem;
   text-align: center;
-  margin: h2 {
+  h2 {
+    font-family: "Signika", sans-serif;
     margin-bottom: 2rem;
     color: #333;
   }
@@ -116,6 +117,7 @@ const InputField = styled.input`
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 
   &:focus {
@@ -129,6 +131,7 @@ const TextareaField = styled.textarea`
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   resize: vertical;
 
@@ -144,6 +147,7 @@ const SubmitButton = styled.button`
   color: #fff;
   border: none;
   border-radius: 0.5rem;
+  font-family: "Signika", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;

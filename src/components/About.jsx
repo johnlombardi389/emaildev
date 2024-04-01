@@ -58,12 +58,14 @@ const AboutText = styled.div`
   /* margin: 0 2rem; */
 
   h3 {
+    font-family: "Signika", sans-serif;
     font-size: 2rem;
     color: #4d2a00;
     margin-bottom: 1rem;
   }
 
   p {
+    font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     color: #666;

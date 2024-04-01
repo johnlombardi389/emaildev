@@ -16,6 +16,7 @@ const StyledFooter = styled.footer`
   width: 100%;
   background-color: #333;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 1rem 0;
 `;

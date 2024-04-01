@@ -56,6 +56,7 @@ const StyledProjects = styled.section`
   margin: 2rem auto 5rem auto;
 
   h2 {
+    font-family: "Signika", sans-serif;
     text-align: center;
   }
 `;
@@ -71,6 +72,7 @@ const FilterOptions = styled.div`
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     color: #333;

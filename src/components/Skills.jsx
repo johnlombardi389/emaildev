@@ -108,6 +108,7 @@ const SkillItem = styled.li`
   padding: 0.5rem 1.25rem;
   border-radius: 1.5rem;
   background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   display: flex;
   align-items: center;

@@ -50,6 +50,7 @@ const StyledList = styled.ul`
   li {
     padding: 0.5rem 2rem;
     position: relative;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
     color: #fdfdfd;
     img {
