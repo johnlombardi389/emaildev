@@ -75,7 +75,7 @@ const StyledProject = styled.div`
       padding: 0.5rem 0;
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.5rem;
       padding-bottom: 1rem;
     }
