@@ -83,14 +83,21 @@ const StyledProject = styled.div`
       justify-content: start;
 
       .demo-button {
-        background-color: #bff94d;
-        color: #874df9;
+        background-color: #274555;
+        color: #ffffff;
+        font-weight: bold;
         border: none;
         padding: 1rem 2rem;
         font-size: 1.1rem;
         margin-top: 1rem;
         margin-right: 2rem;
         cursor: pointer;
+        transition: color 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          color: #f9a11b;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
       }
 
       .github-button {
