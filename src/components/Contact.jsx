@@ -101,6 +101,7 @@ const StyledContact = styled.section`
   h2 {
     font-family: "Signika", sans-serif;
     font-weight: 700;
+    letter-spacing: 0.075rem;
     margin-bottom: 2rem;
     color: #333;
   }

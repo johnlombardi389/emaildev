@@ -66,6 +66,7 @@ const StyledProject = styled.div`
       font-family: "Signika", sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
+      letter-spacing: 0.075rem;
       line-height: 1.5rem;
       padding-bottom: 1rem;
     }

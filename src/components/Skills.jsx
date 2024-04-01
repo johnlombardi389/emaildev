@@ -91,7 +91,7 @@ export default Skills;
 const StyledSkills = styled.section`
   /* max-width: 1200px;
   margin: 2rem auto; */
-  background-color: red;
+  background-color: #fdc23e;
   padding: 2rem 0;
 `;
 

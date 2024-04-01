@@ -61,6 +61,7 @@ const AboutText = styled.div`
     font-family: "Signika", sans-serif;
     font-size: 2rem;
     color: #4d2a00;
+    letter-spacing: 0.075rem;
     margin-bottom: 1rem;
   }
 

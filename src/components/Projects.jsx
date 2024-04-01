@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <StyledProjects>
-      <h2>Portfolio</h2>
+      <h2>John Lombardi Portfolio</h2>
       <FilterOptions>
         <button
           onClick={() => setFilter("All")}
@@ -58,6 +58,8 @@ const StyledProjects = styled.section`
   h2 {
     font-family: "Signika", sans-serif;
     text-align: center;
+    letter-spacing: 0.075rem;
+    font-size: 2rem;
   }
 `;
 
