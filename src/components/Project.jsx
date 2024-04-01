@@ -65,7 +65,7 @@ const StyledProject = styled.div`
       padding: 0.5rem 0;
       font-family: "Signika", sans-serif;
       font-size: 1.5rem;
-      font-weight: bold;
+      font-weight: 700;
       line-height: 1.5rem;
       padding-bottom: 1rem;
     }
@@ -73,6 +73,7 @@ const StyledProject = styled.div`
     .project-summary {
       padding: 0.5rem 0;
       font-family: "Open Sans", sans-serif;
+      font-weight: 400;
       font-size: 1.2rem;
       line-height: 1.5rem;
       padding-bottom: 1rem;
@@ -88,7 +89,7 @@ const StyledProject = styled.div`
         background-color: #274555;
         color: #ffffff;
         font-family: "Signika", sans-serif;
-        font-weight: bold;
+        font-weight: 600;
         border: none;
         padding: 1rem 2rem;
         font-size: 1.1rem;
@@ -98,6 +99,7 @@ const StyledProject = styled.div`
         transition: color 0.3s ease, box-shadow 0.3s ease;
 
         &:hover {
+          background-color: #172932;
           color: #f9a11b;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -106,13 +108,17 @@ const StyledProject = styled.div`
       .github-button {
         margin-top: 0.5rem;
         font-family: "Open Sans", sans-serif;
+        font-weight: 300;
         font-size: 0.9rem;
         text-decoration: underline;
-        color: #000;
+        color: #274555;
         background: none;
         border: none;
         cursor: pointer;
         margin-top: 1rem;
+        &:hover {
+          color: black;
+        }
       }
     }
   }

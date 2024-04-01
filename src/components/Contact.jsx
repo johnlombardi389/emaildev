@@ -100,6 +100,7 @@ const StyledContact = styled.section`
   text-align: center;
   h2 {
     font-family: "Signika", sans-serif;
+    font-weight: 700;
     margin-bottom: 2rem;
     color: #333;
   }
@@ -118,11 +119,12 @@ const InputField = styled.input`
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 1rem;
 
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #274555;
   }
 `;
 
@@ -132,28 +134,32 @@ const TextareaField = styled.textarea`
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   resize: vertical;
 
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #274555;
   }
 `;
 
 const SubmitButton = styled.button`
   padding: 0.75rem 1rem;
-  background-color: #007bff;
+  background-color: #274555;
   color: #fff;
   border: none;
   border-radius: 0.5rem;
   font-family: "Signika", sans-serif;
+  font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #172932;
+    color: #f9a11b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   &:focus {
