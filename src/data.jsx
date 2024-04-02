@@ -37,13 +37,14 @@ const projectData = () => [
   },
   {
     id: 4,
-    tag: "Newsletter",
+    tag: "Promotional",
     title: "Uber Promotional Email",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
-    demo: "https://johnlombardi389.github.io/recipe-ready/",
-    github: "https://github.com/johnlombardi389/recipe-ready",
+    demo: "https://johnlombardi389.github.io/uberemail/",
+    github: "https://github.com/johnlombardi389/uberemail",
     image: ProjectOne,
-    description: "Hello this is the fourth project",
+    description:
+      "Hello this is the fourth project where I made a promotional email for Uber.",
   },
 ];
 
