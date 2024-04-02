@@ -28,10 +28,11 @@ const projectData = () => [
     tag: "Promotional",
     title: "Capcom Promotional Email",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
-    demo: "https://johnlombardi389.github.io/recipe-ready/",
-    github: "https://github.com/johnlombardi389/recipe-ready",
+    demo: "https://johnlombardi389.github.io/capcomemail/",
+    github: "https://github.com/johnlombardi389/capcomemail",
     image: ProjectOne,
-    description: "Hello this is the third project",
+    description:
+      "Hello this is the third project where I made a promotional email for Capcom.",
   },
   {
     id: 4,
