@@ -35,6 +35,7 @@ export default Project;
 const StyledProject = styled.div`
   display: flex;
   align-items: stretch;
+  max-width: 550px;
 
   .project-img {
     flex: 1;
