@@ -7,8 +7,8 @@ const projectData = () => [
     tag: "Newsletter",
     title: "NYT Cooking Newsletter",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
-    demo: "https://johnlombardi389.github.io/recipe-ready/",
-    github: "https://github.com/johnlombardi389/recipe-ready",
+    demo: "https://johnlombardi389.github.io/nytcookingemail/",
+    github: "https://github.com/johnlombardi389/nytcookingemail",
     image: ProjectOne,
     description:
       "Hello this is the first project where I created an html email for cooking.",
@@ -21,7 +21,8 @@ const projectData = () => [
     demo: "https://johnlombardi389.github.io/kitchenaidemail/",
     github: "https://github.com/johnlombardi389/kitchenaidemail",
     image: ProjectOne,
-    description: "Hello this is the second project",
+    description:
+      "Hello this is the second project where I made a transaction email for Kitchen Aid order.",
   },
   {
     id: 3,
