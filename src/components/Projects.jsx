@@ -53,13 +53,14 @@ export default Projects;
 
 const StyledProjects = styled.section`
   max-width: 1200px;
-  margin: 2rem auto 5rem auto;
+  margin: 3rem auto 5rem auto;
 
   h2 {
     font-family: "Signika", sans-serif;
     text-align: center;
     letter-spacing: 0.075rem;
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -67,7 +68,7 @@ const FilterOptions = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 1rem;
+  margin: 0 auto 2rem;
   max-width: 400px;
 
   button {
