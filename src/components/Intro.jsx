@@ -58,6 +58,7 @@ const Description = styled.p`
   color: #999;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  margin-bottom: 1.2rem;
 `;
 
 const Dot = styled.div`

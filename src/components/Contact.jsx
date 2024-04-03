@@ -57,7 +57,10 @@ const Contact = () => {
   return (
     <StyledContact id="contact">
       <h2>Contact Me</h2>
-      <p>You can always reach me at: email</p>
+      <p>
+        Send me a message below or email me at{" "}
+        <a href="mailto:johnlombardi389@gmail.com">johnlombardi389@gmail.com</a>{" "}
+      </p>
       <FormWrapper onSubmit={handleSubmit}>
         <InputField
           type="text"
@@ -107,12 +110,18 @@ const StyledContact = styled.section`
     margin-bottom: 2rem;
     color: #333;
   }
+  p {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
 `;
 
 const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 `;
 
