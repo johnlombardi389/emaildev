@@ -1,6 +1,4 @@
-// Style
 import styled from "styled-components";
-// Img
 import MrBean from "../assets/MrBean.jpg";
 
 const About = () => {
@@ -38,31 +36,33 @@ export default About;
 
 const StyledAbout = styled.section`
   max-width: 1200px;
-  margin: 10rem auto 2rem;
+  margin: 5rem auto 2rem;
 `;
 
 const AboutContent = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 `;
 
 const AboutText = styled.div`
   flex: 1;
-  /* margin: 0 2rem; */
 
   h2 {
     font-family: "Signika", sans-serif;
     font-size: 2rem;
     color: #274555;
     letter-spacing: 0.075rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   p {
@@ -71,10 +71,19 @@ const AboutText = styled.div`
     line-height: 1.6;
     color: #666;
     margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* @media (max-width: 768px) {
+    h2 {
+      margin: 0 auto;
+    } */
+
   }
 
   @media (max-width: 1225px) {
-    margin: 0 2rem;
+    margin-right: 2rem;
   }
 `;
 
@@ -84,15 +93,17 @@ const AboutImg = styled.div`
   img {
     max-width: 100%;
     height: auto;
-    /* border-radius: 10px; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+    margin-top: 5rem;
+    padding-left: 0;
+    padding-right: 2rem;
 
-  @media (max-width: 1225px) {
-    margin: 0 2rem;
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+      padding-right: 0;
+    }
   }
 
   @media (max-width: 768px) {
-    margin: 2rem 2rem 0;
+    width: 80%;
   }
 `;
