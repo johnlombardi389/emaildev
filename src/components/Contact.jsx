@@ -115,6 +115,10 @@ const StyledContact = styled.section`
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin-bottom: 2rem;
+    a {
+      color: #274555;
+      font-weight: 700;
+    }
   }
 `;
 
