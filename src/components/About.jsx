@@ -38,7 +38,7 @@ export default About;
 
 const StyledAbout = styled.section`
   max-width: 1200px;
-  margin: 10rem auto;
+  margin: 10rem auto 2rem;
 `;
 
 const AboutContent = styled.div`
@@ -84,7 +84,7 @@ const AboutImg = styled.div`
   img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 

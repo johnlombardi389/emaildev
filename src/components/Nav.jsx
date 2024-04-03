@@ -25,8 +25,16 @@ const Nav = () => {
             Projects
           </Link>
         </li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link to="about" smooth={true} duration={500} className="nav-link">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500} className="nav-link">
+            Contact
+          </Link>
+        </li>
       </StyledList>
     </StyledNav>
   );
