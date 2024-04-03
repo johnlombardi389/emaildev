@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
+import { introAnimation } from "../style/animation";
 
 const bounce = keyframes`
   0% {
@@ -14,7 +16,12 @@ const bounce = keyframes`
 
 const Intro = () => {
   return (
-    <IntroContainer>
+    <IntroContainer
+      variants={introAnimation}
+      initial="show"
+      animate="show"
+      exit="exit"
+    >
       <Title>John Lombardi</Title>
       <Subtitle>Email Developer</Subtitle>
       <Description>I make cool emails for you.</Description>
@@ -29,7 +36,7 @@ const Intro = () => {
 
 export default Intro;
 
-const IntroContainer = styled.div`
+const IntroContainer = styled(motion.div)`
   height: 100vh;
   display: flex;
   flex-direction: column;
