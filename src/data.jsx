@@ -42,7 +42,7 @@ const projectData = () => [
   {
     id: 4,
     tag: "Newsletter",
-    title: "NYT Cooking Newsletter",
+    title: "NYT Cooking Newsletter Email",
     tools: ["HTML", "&#x2022;", "CSS", "&#x2022;", "MJML"],
     demo: "https://johnlombardi389.github.io/nytcookingemail/",
     github: "https://github.com/johnlombardi389/nytcookingemail",
