@@ -125,10 +125,9 @@ const StyledProject = styled.div`
     }
   }
 
-  /* @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: center;
-  } */
+  @media (max-width: 900px) {
+    margin: 0 auto;
+  }
 `;
 
 const StyledTools = styled.ul`

@@ -20,7 +20,11 @@ const Nav = () => {
         {/* <li>
           <img src={Logo} alt="John's JL Logo" />
         </li> */}
-        <li>Projects</li>
+        <li>
+          <Link to="projects" smooth={true} duration={500} className="nav-link">
+            Projects
+          </Link>
+        </li>
         <li>About</li>
         <li>Contact</li>
       </StyledList>
@@ -53,9 +57,13 @@ const StyledList = styled.ul`
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
     color: #fdfdfd;
-    &:hover {
-      color: #f9a11b;
+    .nav-link {
+      cursor: pointer;
+      &:hover {
+        color: #f9a11b;
+      }
     }
+
     img {
       width: 2rem;
       height: 2rem;

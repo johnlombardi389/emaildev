@@ -11,7 +11,7 @@ const Projects = () => {
     filter === "All" ? data : data.filter((project) => project.tag === filter);
 
   return (
-    <StyledProjects>
+    <StyledProjects id="projects">
       <h2>John Lombardi Portfolio</h2>
       <FilterOptions>
         <button
