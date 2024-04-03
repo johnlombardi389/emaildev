@@ -65,9 +65,9 @@ const StyledProject = styled.div`
     .project-title {
       padding: 0.5rem 0;
       font-family: "Signika", sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 700;
-      letter-spacing: 0.075rem;
+      letter-spacing: 0.025rem;
       line-height: 1.5rem;
       padding-bottom: 1rem;
     }
@@ -96,7 +96,7 @@ const StyledProject = styled.div`
         padding: 1rem 2rem;
         font-size: 1.1rem;
         margin-top: 1rem;
-        margin-right: 2rem;
+        margin-right: 1.25rem;
         cursor: pointer;
         transition: color 0.3s ease, box-shadow 0.3s ease;
 
