@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     background-color: #d3d3d3;
+    scroll-behavior: smooth;
     /* overflow-y: scroll; */
   }
 `;
