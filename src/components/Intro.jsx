@@ -24,7 +24,7 @@ const Intro = () => {
     >
       <Title>John Lombardi</Title>
       <Subtitle>Email Developer</Subtitle>
-      <Description>I make cool emails for you.</Description>
+      {/* <Description>I make cool emails for you.</Description> */}
       <LoadingIndicator>
         <DelayedDot />
         <DelayedDot />
@@ -46,7 +46,7 @@ const IntroContainer = styled(motion.div)`
 
 const Title = styled.h1`
   font-size: 3rem;
-  color: #333;
+  color: #274555;
   margin-bottom: 10px;
   font-family: "Signika", sans-serif;
   font-weight: 600;
@@ -60,18 +60,18 @@ const Subtitle = styled.p`
   font-weight: 400;
 `;
 
-const Description = styled.p`
-  font-size: 1rem;
-  color: #999;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  margin-bottom: 1.2rem;
-`;
+// const Description = styled.p`
+//   font-size: 1rem;
+//   color: #999;
+//   font-family: "Open Sans", sans-serif;
+//   font-weight: 300;
+//   margin-bottom: 1.2rem;
+// `;
 
 const Dot = styled.div`
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: #ff7761;
   border-radius: 50%;
   margin: 0 5px;
   animation: ${bounce} 1s ease-in-out infinite alternate;
