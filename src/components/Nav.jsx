@@ -1,7 +1,6 @@
-// Style
 import { Link } from "react-scroll";
+// Style
 import styled from "styled-components";
-// Icons
 // Images
 import Logo from "../assets/portLogo.svg";
 
@@ -12,14 +11,8 @@ const Nav = () => {
         <li>
           <img src={Logo} alt="John's JL Logo" />
         </li>
-        {/* <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li> */}
       </StyledList>
       <StyledList>
-        {/* <li>
-          <img src={Logo} alt="John's JL Logo" />
-        </li> */}
         <li>
           <Link to="projects" smooth={true} duration={500} className="nav-link">
             Projects
@@ -53,6 +46,7 @@ const StyledNav = styled.nav`
   max-width: 1900px;
   margin: 0 auto;
   background-color: #172932;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
 const StyledList = styled.ul`
@@ -63,7 +57,7 @@ const StyledList = styled.ul`
     padding: 0.5rem 2rem;
     position: relative;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fdfdfd;
     .nav-link {
       cursor: pointer;
@@ -75,6 +69,13 @@ const StyledList = styled.ul`
     img {
       width: 2rem;
       height: 2rem;
+    }
+  }
+
+  @media (max-width: 809px) {
+    li {
+      font-size: 0.85rem;
+      padding: 0.5rem 1.2rem;
     }
   }
 `;
