@@ -92,10 +92,10 @@ const StyledProject = styled.div`
       align-items: center;
       justify-content: start;
 
-      @media (max-width: 809px) {
+      /* @media (max-width: 809px) {
         flex-direction: column;
         align-items: start;
-      }
+      } */
 
       .demo-button {
         background-color: #274555;
