@@ -34,6 +34,15 @@ const StyledProject = styled.div`
   display: flex;
   max-width: 550px;
 
+  @media (max-width: 900px) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 901px) {
+    margin: 0 auto;
+  }
+
   .project-img {
     flex: 1;
 

@@ -93,7 +93,7 @@ const StyledSkills = styled.section`
   /* max-width: 1200px;
   margin: 2rem auto; */
   background-color: #fdc23e;
-  padding: 2rem 0;
+  padding: 2rem;
   text-align: center;
   h2 {
     font-family: "Signika", sans-serif;
@@ -115,19 +115,20 @@ const SkillsList = styled.ul`
 `;
 
 const SkillItem = styled.li`
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1rem;
   border-radius: 1.5rem;
   background-color: #f0f0f0;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
+  font-weight: 300;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   transition: transform 0.2s ease;
 
   svg,
   img {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 0.5rem;
   }
 

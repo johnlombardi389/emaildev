@@ -53,7 +53,7 @@ export default Projects;
 
 const StyledProjects = styled.section`
   max-width: 1200px;
-  margin: 3rem auto 5rem auto;
+  margin: 3rem auto 5rem;
 
   h2 {
     font-family: "Signika", sans-serif;
@@ -81,6 +81,10 @@ const FilterOptions = styled.div`
     color: #333;
     transition: color 0.3s ease;
 
+    @media (max-width: 400px) {
+      padding: 0.5rem 0.5rem;
+    }
+
     &:hover {
       color: #555;
     }
@@ -100,6 +104,7 @@ const ProjectsGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
   padding: 0rem;
+  margin: 0 auto;
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
