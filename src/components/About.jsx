@@ -80,8 +80,6 @@ const AboutText = styled.div`
       margin: 0 auto;
     } */
 
-  }
-
   @media (max-width: 1225px) {
     margin-right: 2rem;
   }
