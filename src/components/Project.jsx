@@ -32,33 +32,35 @@ export default Project;
 
 const StyledProject = styled.div`
   display: flex;
-  align-items: stretch;
+  /* align-items: stretch; */
   max-width: 550px;
 
   .project-img {
     flex: 1;
-    display: flex;
-    align-items: stretch;
-    height: auto;
-    z-index: 2;
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); */
+    /* display: flex; */
+    /* align-items: stretch; */
+    /* height: auto; */
 
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
     }
   }
 
   .project-desc {
     flex: 1;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch; */
     background-color: #f9c04d;
     padding: 2rem;
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
+    max-width: 100%;
+
+    @media (max-width: 809px) {
+      padding: 1rem;
+    }
 
     .project-title {
       padding: 0.5rem 0;
@@ -84,6 +86,11 @@ const StyledProject = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: start;
+
+      @media (max-width: 809px) {
+        flex-direction: column;
+        align-items: start;
+      }
 
       .demo-button {
         background-color: #274555;
