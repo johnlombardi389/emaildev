@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import MrBean from "../assets/MrBean.jpg";
+import AboutGraphic from "../assets/aboutimg.svg";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
           </p>
         </AboutText>
         <AboutImg>
-          <img src={MrBean} alt="Beans" />
+          <img src={AboutGraphic} alt="Rectangle Logo Graphic" />
         </AboutImg>
       </AboutContent>
     </StyledAbout>
@@ -52,7 +52,8 @@ const AboutContent = styled.div`
 `;
 
 const AboutText = styled.div`
-  flex: 1;
+  flex: 2;
+  /* padding: 0 2rem; */
 
   h2 {
     font-family: "Signika", sans-serif;
@@ -61,7 +62,7 @@ const AboutText = styled.div`
     letter-spacing: 0.075rem;
     margin-top: 5rem;
     margin-bottom: 1rem;
-    padding-left: 2rem;
+    padding-left: 0;
     padding-right: 2rem;
   }
 
@@ -71,7 +72,7 @@ const AboutText = styled.div`
     line-height: 1.6;
     color: #666;
     margin-top: 1rem;
-    padding-left: 2rem;
+    padding-left: 0;
     padding-right: 2rem;
   }
 
@@ -82,15 +83,19 @@ const AboutText = styled.div`
 
   @media (max-width: 1225px) {
     margin-right: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 `;
 
 const AboutImg = styled.div`
   flex: 1;
+  text-align: right;
 
   img {
     max-width: 100%;
     height: auto;
+    max-height: 400px;
     margin-top: 5rem;
     padding-left: 0;
     padding-right: 2rem;
@@ -102,6 +107,7 @@ const AboutImg = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 80%;
+    /* width: 80%; */
+    display: none;
   }
 `;
