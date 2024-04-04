@@ -32,14 +32,10 @@ export default Project;
 
 const StyledProject = styled.div`
   display: flex;
-  /* align-items: stretch; */
   max-width: 550px;
 
   .project-img {
     flex: 1;
-    /* display: flex; */
-    /* align-items: stretch; */
-    /* height: auto; */
 
     img {
       width: 100%;
@@ -50,13 +46,13 @@ const StyledProject = styled.div`
 
   .project-desc {
     flex: 1;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch; */
     background-color: #f9c04d;
     padding: 2rem;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 
     @media (max-width: 809px) {
       padding: 1rem;
@@ -103,12 +99,13 @@ const StyledProject = styled.div`
         margin-top: 1rem;
         margin-right: 1.25rem;
         cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: color 0.3s ease, box-shadow 0.3s ease;
 
         &:hover {
           background-color: #172932;
           color: #f9a11b;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
         }
       }
 
@@ -135,16 +132,16 @@ const StyledProject = styled.div`
   }
 `;
 
-const StyledTools = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding-bottom: 2rem;
+// const StyledTools = styled.ul`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   list-style: none;
+//   padding-bottom: 2rem;
 
-  li {
-    margin-right: 0.5rem;
-    font-size: 0.8rem;
-  }
-`;
+//   li {
+//     margin-right: 0.5rem;
+//     font-size: 0.8rem;
+//   }
+// `;
