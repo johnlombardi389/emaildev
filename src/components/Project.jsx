@@ -1,7 +1,5 @@
 // Style
 import styled from "styled-components";
-// Images
-import ProjectOne from "../assets/project1.jpeg";
 
 const Project = ({ title, tools, description, image, demo, github }) => {
   return (

@@ -1,5 +1,4 @@
 // Images
-import ProjectOne from "./assets/project1.jpeg";
 import Nytimescooking from "./assets/nytimescooking.png";
 import Kitchenaid from "./assets/kitchenaid.png";
 import Capcom from "./assets/capcom.png";
