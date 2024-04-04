@@ -76,13 +76,12 @@ const AboutText = styled.div`
     padding-right: 2rem;
   }
 
-  /* @media (max-width: 768px) {
-    h2 {
-      margin: 0 auto;
-    } */
-
-  @media (max-width: 1225px) {
+  @media (max-width: 1200px) {
+    margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  @media (max-width: 768px) {
     text-align: center;
     margin-bottom: 2rem;
   }
