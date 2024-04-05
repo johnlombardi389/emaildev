@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import AboutGraphic from "../assets/aboutimg.svg";
+// Icons
+import { FaLaptopCode, FaPencilRuler, FaBook } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -12,21 +13,36 @@ const About = () => {
             communication experiences. With a keen eye for detail and a deep
             understanding of email design principles, I specialize in
             transforming design concepts into polished HTML email campaigns.
-            Continuous growth is at the core of my professional journey. I am
-            committed to honing my skills and learning about the latest trends
-            and technologies in email development.
-          </p>
-          <p>
-            Having traversed a diverse career path that blends design and
-            coding, I bring a unique perspective to every project. Originally
-            trained in product design, I transitioned seamlessly into the world
-            of development. Allowing me to easily understand and translate
-            design mockups into HTML email documents.
           </p>
         </AboutText>
-        <AboutImg>
-          <img src={AboutGraphic} alt="Rectangle Logo Graphic" />
-        </AboutImg>
+        <AboutList>
+          <AboutListItem>
+            <FaLaptopCode />
+            <p>
+              My professional journey prioritizes continuous growth and
+              learning. I dedicate myself to refining skills and keeping up with
+              email development's latest trends and technologies.
+            </p>
+          </AboutListItem>
+          <AboutListItem>
+            <FaPencilRuler />
+            <p>
+              My career path combines design and coding, offering a distinctive
+              outlook on projects. Originally a product designer, I seamlessly
+              transitioned to development. This enables me to easily translate
+              design mockups into HTML emails.
+            </p>
+          </AboutListItem>
+          <AboutListItem>
+            <FaBook />
+            <p>
+              I also love to cook and you'll often find me experimenting in the
+              kitchen. I even developed an app, Recipe Ready, to help find new
+              recipes based on the ingredients you have at home. Feel free to
+              check out the project link.
+            </p>
+          </AboutListItem>
+        </AboutList>
       </AboutContent>
     </StyledAbout>
   );
@@ -41,20 +57,12 @@ const StyledAbout = styled.section`
 
 const AboutContent = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
 `;
 
 const AboutText = styled.div`
-  flex: 2;
-  /* padding: 0 2rem; */
-
+  max-width: 800px;
   h2 {
     font-family: "Signika", sans-serif;
     font-size: 2rem;
@@ -64,6 +72,7 @@ const AboutText = styled.div`
     margin-bottom: 1rem;
     padding-left: 0;
     padding-right: 2rem;
+    text-align: center;
   }
 
   p {
@@ -71,42 +80,50 @@ const AboutText = styled.div`
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
-    margin-top: 1rem;
-    padding-left: 0;
-    padding-right: 2rem;
+    margin-bottom: 2rem;
   }
 
   @media (max-width: 1200px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
   }
 
   @media (max-width: 768px) {
-    text-align: center;
     margin-bottom: 2rem;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 0;
+    }
   }
 `;
 
-const AboutImg = styled.div`
-  flex: 1;
-  text-align: right;
+const AboutList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  max-width: 800px;
+  margin: 0 2rem;
+`;
 
-  img {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-    margin-top: 5rem;
-    padding-left: 0;
-    padding-right: 2rem;
-
-    @media (max-width: 768px) {
-      margin-top: 2rem;
-      padding-right: 0;
-    }
+const AboutListItem = styled.li`
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-right: 2rem;
+  svg {
+    width: 3rem;
+    height: 3rem;
+    color: #ff7761;
+    margin-right: 1rem;
+    padding-bottom: 0.75rem;
   }
-
-  @media (max-width: 768px) {
-    /* width: 80%; */
-    display: none;
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
   }
 `;
