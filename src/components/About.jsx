@@ -39,7 +39,14 @@ const About = () => {
               I also love to cook and you'll often find me experimenting in the
               kitchen. I even developed an app, Recipe Ready, to help find new
               recipes based on the ingredients you have at home. Feel free to
-              check out the project link.
+              check out the{" "}
+              <a
+                href="https://github.com/johnlombardi389/recipe-ready"
+                target="_blank"
+              >
+                project link
+              </a>
+              .
             </p>
           </AboutListItem>
         </AboutList>
@@ -125,5 +132,10 @@ const AboutListItem = styled.li`
     line-height: 1.6;
     color: #666;
     margin-bottom: 2rem;
+
+    a {
+      color: #274555;
+      font-weight: 700;
+    }
   }
 `;
