@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <StyledProjects id="projects">
-      <h2>John Lombardi Portfolio</h2>
+      <h2>John Lombardi's Projects</h2>
       <FilterOptions>
         <button
           onClick={() => setFilter("All")}
