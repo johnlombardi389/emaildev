@@ -14,7 +14,7 @@ const projectData = () => [
     github: "https://github.com/johnlombardi389/uberemail",
     image: Uber,
     description:
-      "Hello this is the fourth project where I made a promotional email for Uber.",
+      "Recreated a promotional email for Uber using HTML and CSS, using the MJML framework.",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const projectData = () => [
     github: "https://github.com/johnlombardi389/kitchenaidemail",
     image: Kitchenaid,
     description:
-      "Hello this is the second project where I made a transaction email for Kitchen Aid order.",
+      "Recreated a transactional email for KitchenAid using HTML and CSS, built with HTML Tables.",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projectData = () => [
     github: "https://github.com/johnlombardi389/capcomemail",
     image: Capcom,
     description:
-      "Hello this is the third project where I made a promotional email for Capcom.",
+      "Recreated a promotional email for Capcom using HTML and CSS, using the MJML framework.",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const projectData = () => [
     github: "https://github.com/johnlombardi389/nytcookingemail",
     image: Nytimescooking,
     description:
-      "Hello this is the first project where I created an html email for cooking.",
+      "Recreated a newsletter email for The New York Times Cooking using HTML and CSS, using the MJML framework.",
   },
 ];
 
