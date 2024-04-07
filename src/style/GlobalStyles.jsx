@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    background-color: #d3d3d3;
+    background-color: #f9f9f9;
     scroll-behavior: smooth;
     /* overflow-y: scroll; */
   }

@@ -162,7 +162,7 @@ const TextareaField = styled.textarea`
 
 const SubmitButton = styled.button`
   padding: 0.75rem 1rem;
-  background-color: #274555;
+  background-color: #5390b0;
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -170,12 +170,12 @@ const SubmitButton = styled.button`
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    background-color: #172932;
-    color: #f9a11b;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #274555;
+    box-shadow: rgb(38, 57, 77) 0px 15px 15px -15px;
   }
 
   &:focus {

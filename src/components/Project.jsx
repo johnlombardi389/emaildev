@@ -33,6 +33,8 @@ export default Project;
 const StyledProject = styled.div`
   display: flex;
   max-width: 550px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -92,13 +94,8 @@ const StyledProject = styled.div`
       align-items: center;
       justify-content: start;
 
-      /* @media (max-width: 809px) {
-        flex-direction: column;
-        align-items: start;
-      } */
-
       .demo-button {
-        background-color: #274555;
+        background-color: #5390b0;
         color: #ffffff;
         font-family: "Signika", sans-serif;
         font-weight: 600;
@@ -108,13 +105,12 @@ const StyledProject = styled.div`
         margin-top: 1rem;
         margin-right: 1.25rem;
         cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transition: color 0.3s ease, box-shadow 0.3s ease;
 
         &:hover {
-          background-color: #172932;
-          color: #f9a11b;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+          background-color: #274555;
+          box-shadow: rgb(38, 57, 77) 0px 15px 15px -15px;
         }
       }
 
